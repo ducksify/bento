@@ -271,6 +271,7 @@ source "vmware-iso" "vm" {
   # Source block common options
   boot_command     = var.boot_command
   boot_wait        = var.vmware_boot_wait == null ? local.default_boot_wait : var.vmware_boot_wait
+  boot_key_interval      = var.boot_key_interval
   cpus             = var.cpus
   communicator     = local.communicator
   disk_size        = var.disk_size

@@ -191,6 +191,10 @@ variable "vbox_source" {
 }
 
 # vmware-iso
+variable "boot_key_interval" {
+  type    = string
+  default = null
+}
 variable "vmware_boot_wait" {
   type    = string
   default = null
